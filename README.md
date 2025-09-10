@@ -6,9 +6,10 @@ Unlike Bresenham’s method, which produces sharp, pixelated lines by selecting 
 
 Key features:
 
-Antialiasing: Reduces the jagged "stair-step" effect of digital lines.
-Intensity-based rendering: Pixels near the line path are drawn with a fraction of full intensity based on their distance to the ideal line.
-Efficiency: Runs in linear time and is simple enough for real-time rendering, even in the early 1990s.
+- Antialiasing: Reduces the jagged "stair-step" effect of digital lines.
+- Intensity-based rendering: Pixels near the line path are drawn with a fraction of full intensity based on their distance to the ideal line.
+- Efficiency: Runs in linear time and is simple enough for real-time rendering, even in the early 1990s.
+
 At the time, Xiaolin Wu’s method provided one of the first practical ways to render smooth lines on CRT and early LCD displays without significantly increasing computational cost, improving both the visual quality and readability of graphics.
 
 Note: Endpoint treatment differs slightly from the original 1991 algorithm. Also, I do not implicitly clamp intensities to `[0, 1]`, even though they do stay in that range.
